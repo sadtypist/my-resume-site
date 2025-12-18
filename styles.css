@@ -187,7 +187,52 @@ a:hover {
 footer {
     margin-top: 50px;
     font-size: 0.9rem;
-    color: #666;
+    color: #00f2fe;
+    /* Terminal cyan color */
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 20px;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
+}
+
+.terminal-footer {
+    opacity: 0.8;
+}
+
+.cmd-output {
+    color: #b0b0b0;
+}
+
+/* Glitch Effect Keyframes */
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+
+    20% {
+        transform: translate(-2px, 2px)
+    }
+
+    40% {
+        transform: translate(-2px, -2px)
+    }
+
+    60% {
+        transform: translate(2px, 2px)
+    }
+
+    80% {
+        transform: translate(2px, -2px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+/* Apply Glitch on Hover for Projects Title */
+h1:hover {
+    animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    color: #ff00de;
+    /* Glitch pink color */
+    text-shadow: 2px 2px #00f2fe;
 }
