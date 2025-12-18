@@ -289,3 +289,35 @@ h1:hover::after {
     text-shadow: -2px 0 #00f2fe;
     animation: glitch 0.3s infinite linear alternate;
 }
+
+/* Apply Glitch on Hover for Links */
+a {
+    position: relative;
+    display: inline-block;
+    /* Ensure transform works */
+}
+
+a:hover::before,
+a:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a2e;
+    /* Matches body background */
+    overflow: hidden;
+}
+
+a:hover::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00de;
+    animation: glitch 0.3s infinite linear alternate-reverse;
+}
+
+a:hover::after {
+    left: -2px;
+    text-shadow: -2px 0 #00f2fe;
+    animation: glitch 0.3s infinite linear alternate;
+}
