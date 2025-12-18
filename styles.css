@@ -1,0 +1,38 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #222, #444, #000);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    /* Electric Blue Gradient Text */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #d1d1d1;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    /* Centers the paragraph block */
+}
+
+a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00c6ff;
+    /* Neon glow effect on hover */
+}
