@@ -12,6 +12,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Code-Style Highlighting */
+::selection {
+    background: #00f2fe;
+    /* Neon Cyan */
+    color: #1a1a2e;
+    /* Dark Background Color */
+}
+
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
